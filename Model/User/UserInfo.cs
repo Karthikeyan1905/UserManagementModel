@@ -10,9 +10,6 @@ namespace UserManagement.Model.User
     [Serializable]
     public class UserInfo: Base
     {
-        
-
-
         public int userRoleID { get; set; }
         public LoginCredential? loginCredential { get; set; }
         public int? userID { set; get; }
@@ -51,7 +48,6 @@ namespace UserManagement.Model.User
         public List<Company> experiance { get; set; }
         public static List<UserInfo> RegisteredUsers { get; } = new();
 
-        //public object departments;
-        //public object Experiance;
+    
     }
 }
