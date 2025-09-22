@@ -8,12 +8,19 @@ using UserManagementModel.Model;
 
 namespace UserManagement.Model.Team
 {
-    public class TeamUser : Base
+    [Serializable]
+    public class TeamUser
     {
-        public int Userid { get; set; }
-        public int TeamID { get; set; }
-        public int EmployeeID { get; set; }
+        public int userid { get; set; }
+        public int teamID { get; set; }
+        public int employeeID { get; set; }
+        public int teamuserID { get; set; }
+        public string status { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public DateTime UpdatedOn { get; set; }
 
-        
+        public int createdBy { get; set; }
+        public int updatedBy { get; set; }
+
     }
 }
